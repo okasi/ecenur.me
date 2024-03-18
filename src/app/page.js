@@ -26,7 +26,7 @@ export default function Home() {
         <Image
           src="/ece-saturn.png"
           alt="ece saturn"
-          height={368}
+          height={263.98}
           width={368}
           className="mx-auto py-12 mt-6"
           quality={98}
