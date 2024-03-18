@@ -29,8 +29,9 @@ export default function Home() {
           height={368}
           width={368}
           className="mx-auto py-12 mt-6"
+          quality={98}
           priority
-        ></Image>
+        />
 
         <a
           href="https://www.linkedin.com/in/ecenursi/"
