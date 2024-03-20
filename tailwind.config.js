@@ -19,10 +19,12 @@ module.exports = {
       colors: {
         "brand-primary": "#624673",
         "brand-secondary": "#0D5979",
+        "brand-tertiary": "#F5DBDB",
         "accent-green": "#B8C69A",
         "accent-beige": "#D6BBA9",
         "accent-dark": "#132B2F",
         "accent-orange": "#E9A385",
+        "neutral-base": "#F5F5F0",
       },
     },
   },
