@@ -1,4 +1,4 @@
-import BrickSection from "@/components/brickSection";
+import BrickSection from "@/components/BrickSection";
 import Image from "next/image";
 
 export default function Home() {
