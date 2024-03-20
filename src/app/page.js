@@ -1,4 +1,5 @@
 import BrickSection from "@/components/BrickSection";
+import TitleTag from "@/components/TitleTag";
 import Image from "next/image";
 
 export default function Home() {
@@ -12,7 +13,7 @@ export default function Home() {
             operator="dilate"
             radius="8"
           />
-          <feFlood flood-color="#624673" result="OutlineColor" />
+          <feFlood floodColor="#624673" result="OutlineColor" />
           <feComposite
             in="OutlineColor"
             in2="Dilated"
@@ -90,69 +91,82 @@ export default function Home() {
 
         {/* About me */}
         <BrickSection>
-          <h2 className="bg-accent-dark w-fit py-2 px-8 mt-8 -ml-4 rounded-r-2xl text-neutral-base font-display text-3xl">
-            About me
-          </h2>
+          <TitleTag>About me</TitleTag>
 
           <div className="flex flex-col md:flex-row items-center mb-8">
             <div className="flex flex-col md:w-[55%] mt-8 ml-6 space-y-6">
               <div className="bg-accent-green p-6 rounded-2xl text-xl">
-                I'm a passionate UX student with a love for{" "}
-                <span className="font-bold text-brand-secondary">
-                  creative thinking
-                </span>{" "}
-                and a drive to think{" "}
-                <span className="font-bold text-brand-secondary">
-                  beyond the ordinary
-                </span>
-                . Driven by{" "}
-                <span className="font-bold text-brand-secondary">
-                  curiosity
-                </span>
-                ,{" "}
-                <span className="font-bold text-brand-secondary">
-                  creativity
-                </span>
-                ,{" "}
-                <span className="font-bold text-brand-secondary">
-                  attention to detail
-                </span>
-                , and{" "}
-                <span className="font-bold text-brand-secondary">empathy</span>,
-                I thrive on crafting{" "}
-                <span className="font-bold text-brand-secondary">
-                  user experiences
-                </span>{" "}
-                that deeply resonate with individuals. I'm constantly seeking
-                opportunities to{" "}
-                <span className="font-bold text-brand-secondary">learn</span>{" "}
-                and <span className="font-bold text-brand-secondary">grow</span>
-                ,{" "}
-                <span className="font-bold text-brand-secondary">pushing</span>{" "}
-                <span className="font-bold text-brand-secondary">
-                  boundaries
-                </span>{" "}
-                in the field of design.
+                <p>
+                  I'm a passionate UX student with a love for{" "}
+                  <span className="font-bold text-brand-secondary">
+                    creative thinking
+                  </span>{" "}
+                  and a drive to think{" "}
+                  <span className="font-bold text-brand-secondary">
+                    beyond the ordinary
+                  </span>
+                  . Driven by{" "}
+                  <span className="font-bold text-brand-secondary">
+                    curiosity
+                  </span>
+                  ,{" "}
+                  <span className="font-bold text-brand-secondary">
+                    creativity
+                  </span>
+                  ,{" "}
+                  <span className="font-bold text-brand-secondary">
+                    attention to detail
+                  </span>
+                  , and{" "}
+                  <span className="font-bold text-brand-secondary">
+                    empathy
+                  </span>
+                  , I thrive on crafting{" "}
+                  <span className="font-bold text-brand-secondary">
+                    user experiences
+                  </span>{" "}
+                  that deeply resonate with individuals. I'm constantly seeking
+                  opportunities to{" "}
+                  <span className="font-bold text-brand-secondary">learn</span>{" "}
+                  and{" "}
+                  <span className="font-bold text-brand-secondary">grow</span>,{" "}
+                  <span className="font-bold text-brand-secondary">
+                    pushing
+                  </span>{" "}
+                  <span className="font-bold text-brand-secondary">
+                    boundaries
+                  </span>{" "}
+                  in the field of design.
+                </p>
               </div>
 
               <div className="bg-accent-beige p-6 rounded-2xl text-xl">
-                Beyond my studies, I have diverse interests that keep me
-                engaged. With a background in{" "}
-                <span className="font-bold text-brand-secondary">acting</span>,
-                I excel at storytelling and evoking emotions. I also find
-                inspiration in{" "}
-                <span className="font-bold text-brand-secondary">nature</span>,{" "}
-                <span className="font-bold text-brand-secondary">museums</span>,
-                and the art of{" "}
-                <span className="font-bold text-brand-secondary">
-                  thoughtful gifting
-                </span>
-                . These experiences not only help me unwind but also serve as
-                inspiration for my design work. I strive to integrate my unique
-                perspectives and passions into both my personal and professional
-                life, drawing from the realms of{" "}
-                <span className="font-bold text-brand-secondary">art</span> and{" "}
-                <span className="font-bold text-brand-secondary">culture</span>.
+                <p>
+                  Beyond my studies, I have diverse interests that keep me
+                  engaged. With a background in{" "}
+                  <span className="font-bold text-brand-secondary">acting</span>
+                  , I excel at storytelling and evoking emotions. I also find
+                  inspiration in{" "}
+                  <span className="font-bold text-brand-secondary">nature</span>
+                  ,{" "}
+                  <span className="font-bold text-brand-secondary">
+                    museums
+                  </span>
+                  , and the art of{" "}
+                  <span className="font-bold text-brand-secondary">
+                    thoughtful gifting
+                  </span>
+                  . These experiences not only help me unwind but also serve as
+                  inspiration for my design work. I strive to integrate my
+                  unique perspectives and passions into both my personal and
+                  professional life, drawing from the realms of{" "}
+                  <span className="font-bold text-brand-secondary">art</span>{" "}
+                  and{" "}
+                  <span className="font-bold text-brand-secondary">
+                    culture
+                  </span>
+                  .
+                </p>
               </div>
             </div>
 
@@ -161,7 +175,7 @@ export default function Home() {
               alt="Ecenur on floor"
               height={473.5}
               width={384}
-              className="mx-auto mt-8 object-contain max-w-[45%]"
+              className="mx-auto mt-8 object-contain max-w-[45%] px-2"
               quality={98}
             />
           </div>
@@ -171,9 +185,7 @@ export default function Home() {
 
         {/* Experience */}
         <BrickSection>
-          <h2 className="bg-accent-dark w-fit py-2 px-8 mt-8 -ml-4 rounded-r-2xl text-neutral-base font-display text-3xl">
-            Experience
-          </h2>
+          <TitleTag>Experience</TitleTag>
 
           <div className="flex flex-col-reverse md:flex-row mb-16">
             <div className="flex flex-col md:w-[55%] mt-8 ml-6 space-y-1.5">
@@ -201,8 +213,8 @@ export default function Home() {
                 <path
                   d="M15.4476 3C13.6559 22.5241 19.7378 39.2898 45.2256 50.4409C53.8056 54.1947 68.1245 55.7137 62.8719 45.1697C57.9926 35.3752 36.2798 30.1375 22.38 33.9421C1.52121 39.6515 0.49002 56.3338 5.52155 69.2065C13.3059 89.1219 23.6453 108.609 39.2385 126.347C42.4148 129.96 49.2137 103.916 45.2256 112.589C42.4107 118.71 42.3896 124.286 42.3896 130.616C42.3896 135.174 40.1051 132.259 36.7176 129.615C31.2122 125.317 22.3225 121.092 14.0296 119.705"
                   stroke="#606060"
-                  stroke-width="5"
-                  stroke-linecap="round"
+                  strokeWidth="5"
+                  strokeLinecap="round"
                 />
               </svg>
 
@@ -214,17 +226,51 @@ export default function Home() {
               </div>
             </div>
 
-            <a href="https://www.linkedin.com/in/ecenursi/" target="#blank" className="max-w-[45%] ml-auto mr-4 -mt-16 h-fit">
+            <a
+              href="https://www.linkedin.com/in/ecenursi/"
+              target="#blank"
+              className="max-w-[45%] ml-auto mr-4 -mt-16 h-fit"
+            >
               <Image
                 src="/ecenur-open-to-internship.png"
                 alt="A sign that says 'Open to internship'"
                 height={247.4325}
                 width={286.875}
-                className="object-contain "
+                className="object-contain"
                 quality={98}
               />
             </a>
           </div>
+        </BrickSection>
+
+        <hr className="py-8"></hr>
+
+        {/* Projects */}
+        <BrickSection>
+          <TitleTag>Projects</TitleTag>
+
+          <Image
+            src="/ecenur-flying.png"
+            alt="Ecenur flying"
+            height={120.4}
+            width={256}
+            className="object-contain"
+            quality={98}
+          />
+        </BrickSection>
+
+        <hr className="py-8"></hr>
+
+        {/* Skills */}
+        <BrickSection>
+          <TitleTag>Skills</TitleTag>
+        </BrickSection>
+
+        <hr className="py-8"></hr>
+
+        {/* Testimonials */}
+        <BrickSection>
+          <TitleTag>Testimonials</TitleTag>
         </BrickSection>
       </main>
     </>
