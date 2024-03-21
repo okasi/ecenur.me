@@ -4,17 +4,30 @@
 
 
 body {
-  @apply bg-brand-secondary font-sans antialiased
+  @apply font-sans antialiased
 }
 
 @layer utilities {
-  .outside-primary-stroke {
-    text-shadow:
-    -1px -1px 1px #624673,  
-    1px -1px 1px #624673,
-    -1px  1px 1px #624673,
-    1px  1px 1px #624673;
 
+
+  @keyframes hover-in-air {
+
+    0%,
+    100% {
+      transform: translateY(41.5%);
+      animation-timing-function: cubic-bezier(0.3, 0.27, 0.6, 0.9);
+    }
+
+    50% {
+      transform: translateY(0);
+      animation-timing-function: cubic-bezier(0.3, 0.27, 0.6, 0.9);
+    }
   }
-}
 
+  .animate-hover-in-air {
+    animation: hover-in-air 4s infinite;
+  }
+
+
+
+}
