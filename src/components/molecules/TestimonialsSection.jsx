@@ -37,7 +37,7 @@ export default function TestimonialsSection() {
             className="keen-slider cursor-grab active:cursor-grabbing !overflow-visible flex flex-row"
           >
             {/* Mikael K. */}
-            <div className="keen-slider__slide border rounded-2xl bg-brand-tertiary p-6">
+            <div className="keen-slider__slide border rounded-2xl bg-light-beige p-6">
               <div className="flex flex-col-reverse items-center md:items-stretch md:flex-row">
                 <Image
                   src="/testimonials/mikael-k.jpg"
@@ -52,7 +52,7 @@ export default function TestimonialsSection() {
                     <h3 className="bg-accent-dark rounded-tr-2xl px-4 py-2 font-display text-accent-orange text-3xl ">
                       Mikael K.
                     </h3>
-                    <h4 className=" px-4 py-2 text-base flex items-center">
+                    <h4 className=" px-4 py-2 text-lg flex items-center">
                       CTO & Full-Stack Developer
                     </h4>
                   </div>
@@ -72,7 +72,7 @@ export default function TestimonialsSection() {
             </div>
 
             {/* Deniz K. */}
-            <div className="keen-slider__slide border rounded-2xl bg-brand-secondary p-6">
+            <div className="keen-slider__slide border rounded-2xl bg-light-blue p-6">
               <div className="flex flex-col-reverse items-center md:items-stretch md:flex-row">
                 <Image
                   src="/testimonials/deniz-k.jpg"
@@ -87,7 +87,7 @@ export default function TestimonialsSection() {
                     <h3 className="bg-accent-dark rounded-tr-2xl px-4 py-2 font-display text-accent-orange text-3xl ">
                       Deniz K.
                     </h3>
-                    <h4 className=" px-4 py-2 text-base flex items-center">
+                    <h4 className=" px-4 py-2 text-lg flex items-center">
                       Art Teacher
                     </h4>
                   </div>
@@ -104,7 +104,7 @@ export default function TestimonialsSection() {
             </div>
 
             {/* Okan S. */}
-            <div className="keen-slider__slide border rounded-2xl bg-accent-orange p-6">
+            <div className="keen-slider__slide border rounded-2xl bg-brand-tertiary p-6">
               <div className="flex flex-col-reverse items-center md:items-stretch md:flex-row">
                 <Image
                   src="/testimonials/okan-s.jpg"
@@ -116,10 +116,10 @@ export default function TestimonialsSection() {
                 />
                 <div className="flex flex-col w-full">
                   <div className="flex flex-row bg-neutral-black/10 w-full">
-                    <h3 className="bg-accent-dark rounded-tr-2xl px-4 py-2 font-display text-accent-orange text-3xl ">
+                    <h3 className="bg-accent-dark rounded-tr-2xl px-4 py-2 font-display text-accent-orange text-3xl">
                       Okan S.
                     </h3>
-                    <h4 className=" px-4 py-2 text-base flex items-center">
+                    <h4 className=" px-4 py-2 text-lg flex items-center">
                       Full-Stack Developer
                     </h4>
                   </div>
@@ -137,7 +137,7 @@ export default function TestimonialsSection() {
             </div>
 
             {/* Asli B. */}
-            <div className="keen-slider__slide border rounded-2xl bg-accent-beige p-6">
+            <div className="keen-slider__slide border rounded-2xl bg-light-green p-6">
               <div className="flex flex-col-reverse items-center md:items-stretch md:flex-row">
                 <Image
                   src="/testimonials/asli-b.jpg"
@@ -152,7 +152,7 @@ export default function TestimonialsSection() {
                     <h3 className="bg-accent-dark rounded-tr-2xl px-4 py-2 font-display text-accent-orange text-3xl ">
                       Asli B.
                     </h3>
-                    <h4 className=" px-4 py-2 text-base flex items-center">
+                    <h4 className=" px-4 py-2 text-lg flex items-center">
                       Nurse
                     </h4>
                   </div>

@@ -33,6 +33,8 @@ module.exports = {
       "neutral-grey": "#757575",
       "light-blue": "#B6CDD6",
       "light-pink": "#FEFBFB",
+      "light-green": "#E3E8D7",
+      "light-beige": "#EFE4DD"
     },
   },
   plugins: [],
