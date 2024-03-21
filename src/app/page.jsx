@@ -80,8 +80,7 @@ export default function Home() {
         </a>
 
         <p className="text-sm text-neutral-black py-12 opacity-50">
-          © {new Date().getFullYear()} Made with ❤️ in Stockholm by Ecenur U. &
-          Okan S.
+          © {new Date().getFullYear()} Made with 💞 in Stockholm
         </p>
       </footer>
     </>
