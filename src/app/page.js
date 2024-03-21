@@ -33,7 +33,7 @@ export default function Home() {
           <h1 className="mt-4 font-display text-black text-6xl md:text-8xl text-center leading-tight">
             Hi, I’m{" "}
             <span
-              className="text-neutral-base mix-blend-multiply"
+              className="text-white mix-blend-multiply"
               style={{
                 filter: "url(#outlineColored)",
               }}
@@ -41,15 +41,15 @@ export default function Home() {
               Ecenur Uyguner
             </span>
             <br></br>I{" "}
-            <span className="text-transparent hover:bg-accent-green hover:text-brand-secondary [-webkit-text-stroke:2.75px#624673] hover:[-webkit-text-stroke:0]">
+            <span className="text-white hover:bg-accent-green hover:text-brand-secondary [-webkit-text-stroke:2.75px#624673] hover:[-webkit-text-stroke:0]">
               design
             </span>
             ,{" "}
-            <span className="text-transparent hover:bg-accent-beige hover:text-brand-secondary [-webkit-text-stroke:2.75px#624673] hover:[-webkit-text-stroke:0]">
+            <span className="text-white hover:bg-accent-beige hover:text-brand-secondary [-webkit-text-stroke:2.75px#624673] hover:[-webkit-text-stroke:0]">
               act
             </span>{" "}
             &{" "}
-            <span className="text-transparent hover:bg-accent-dark hover:text-accent-orange [-webkit-text-stroke:2.75px#624673] hover:[-webkit-text-stroke:0]">
+            <span className="text-white hover:bg-accent-dark hover:text-accent-orange [-webkit-text-stroke:2.75px#624673] hover:[-webkit-text-stroke:0]">
               craft
             </span>
           </h1>
@@ -257,6 +257,90 @@ export default function Home() {
             className="object-contain"
             quality={98}
           />
+
+          {/* First project – Tires Service */}
+          <div className="max-w-5xl mx-auto">
+            <div className="flex flex-col-reverse items-center md:items-stretch md:space-x-4 md:flex-row justify-between">
+              <div className="flex flex-col mt-4 md:mt-0 justify-center border-accent-green bg-white border-4 rounded-2xl aspect-[4/3] p-4 max-w-[68.75%] md:max-w-[50%]">
+                <Image
+                  src="/road-runners-logo.jpg"
+                  alt="road runners logo"
+                  height={242.6}
+                  width={448}
+                  className="object-contain rounded-2xl"
+                  quality={98}
+                />
+              </div>
+
+              <div className="bg-accent-green rounded-2xl p-6 md:max-w-[50%]">
+                <h3 className="text-2xl font-bold">Changing Tires Service</h3>
+
+                <ul className="inline-flex flex-row text-base mt-2">
+                  <li className="py-0.5 px-2 rounded-full border border-neutral-grey text-neutral-grey mt-2">
+                    Requirement and Project Management
+                  </li>
+                  <li className="py-0.5 px-2 rounded-full border border-neutral-grey text-neutral-grey ml-2 mt-2">
+                    UX-Design
+                  </li>
+                </ul>
+                <ul className="inline-flex flex-row text-base">
+                  <li className="py-0.5 px-2 rounded-full border border-neutral-grey text-neutral-grey mt-2">
+                    UX-Research
+                  </li>
+                  <li className="py-0.5 px-2 rounded-full border border-neutral-grey text-neutral-grey ml-2 mt-2">
+                    UI-Design
+                  </li>
+                </ul>
+
+                <p className="mt-4 text-lg">
+                  Creating a new brand and service where people can book time
+                  slots at their nearest workshop to change their tires.
+                  Designing website, logo, slogan and moreover.
+                </p>
+              </div>
+            </div>
+
+            <hr className="my-12"></hr>
+
+            <div className="flex flex-col items-center md:items-stretch md:space-x-4 md:flex-row justify-between">
+              <div className="bg-accent-beige rounded-2xl p-6 md:max-w-[50%]">
+                <h3 className="text-2xl font-bold">
+                  Stress Among Preschool Teachers
+                </h3>
+
+                <ul className="inline-flex flex-row text-base mt-2">
+                  <li className="py-0.5 px-2 rounded-full border border-neutral-grey text-neutral-grey mt-2">
+                    UX-Research
+                  </li>
+                  <li className="py-0.5 px-2 rounded-full border border-neutral-grey text-neutral-grey ml-2 mt-2">
+                    Project Management
+                  </li>
+                  <li className="py-0.5 px-2 rounded-full border border-neutral-grey text-neutral-grey ml-2 mt-2">
+                    UI-Design
+                  </li>
+                </ul>
+
+                <p className="mt-4 text-lg">
+                  The main topic was "How can we increase people's well-being?"
+                  and we decided to focus our research on "What are the main
+                  causes of stress among preschool teachers?"
+                </p>
+              </div>
+
+              <div className="flex flex-col mt-4 md:mt-0 justify-center border-accent-green bg-white border-4 rounded-2xl aspect-[4/3] p-4 max-w-[68.75%] md:max-w-[50%]">
+                <Image
+                  src="/preschool.jpg"
+                  alt="preschool"
+                  height={320}
+                  width={320}
+                  className="object-contain rounded-full"
+                  quality={98}
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Second project – Preschool Teachers */}
         </BrickSection>
 
         <hr className="py-8"></hr>
