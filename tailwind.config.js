@@ -31,6 +31,8 @@ module.exports = {
       "neutral-base": "#F5F5F0",
       "neutral-black": "#060606",
       "neutral-grey": "#757575",
+      "light-blue": "#B6CDD6",
+      "light-pink": "#FEFBFB",
     },
   },
   plugins: [],

@@ -15,7 +15,7 @@ export default function TestimonialsSection() {
     initial: 0,
     slides: {
       origin: "center",
-      perView: 1.33,
+      perView: 1.1,
       spacing: 24,
     },
     slideChanged(slider) {
@@ -27,18 +27,18 @@ export default function TestimonialsSection() {
   });
 
   return (
-    <BrickSection>
+    <BrickSection id="testimonials-section">
       <TitleTag>Testimonials</TitleTag>
 
       <>
-        <div className="relative mt-8">
+        <div className="relative mt-8 overflow-x-hidden">
           <div
             ref={sliderRef}
-            className="keen-slider cursor-grab active:cursor-grabbing"
+            className="keen-slider cursor-grab active:cursor-grabbing !overflow-visible flex flex-row"
           >
             {/* Mikael K. */}
             <div className="keen-slider__slide border rounded-2xl bg-brand-tertiary p-6">
-              <div className="flex flex-row">
+              <div className="flex flex-col-reverse items-center md:items-stretch md:flex-row">
                 <Image
                   src="/testimonials/mikael-k.jpg"
                   alt="photo of mikael k."
@@ -73,7 +73,7 @@ export default function TestimonialsSection() {
 
             {/* Deniz K. */}
             <div className="keen-slider__slide border rounded-2xl bg-brand-secondary p-6">
-              <div className="flex flex-row">
+              <div className="flex flex-col-reverse items-center md:items-stretch md:flex-row">
                 <Image
                   src="/testimonials/deniz-k.jpg"
                   alt="photo of Deniz K."
@@ -105,7 +105,7 @@ export default function TestimonialsSection() {
 
             {/* Okan S. */}
             <div className="keen-slider__slide border rounded-2xl bg-accent-orange p-6">
-              <div className="flex flex-row">
+              <div className="flex flex-col-reverse items-center md:items-stretch md:flex-row">
                 <Image
                   src="/testimonials/okan-s.jpg"
                   alt="photo of Okan S."
@@ -138,7 +138,7 @@ export default function TestimonialsSection() {
 
             {/* Asli B. */}
             <div className="keen-slider__slide border rounded-2xl bg-accent-beige p-6">
-              <div className="flex flex-row">
+              <div className="flex flex-col-reverse items-center md:items-stretch md:flex-row">
                 <Image
                   src="/testimonials/asli-b.jpg"
                   alt="photo of Asli B."

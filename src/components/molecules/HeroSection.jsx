@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <BrickSection>
+    <BrickSection id="hero-section">
       <h1 className="mt-4 font-display text-black text-6xl md:text-8xl text-center leading-tight">
         Hi, I’m{" "}
         <svg xmlns="http://www.w3.org/2000/svg" className="h-0 w-0 inline">

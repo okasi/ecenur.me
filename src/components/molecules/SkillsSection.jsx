@@ -3,7 +3,7 @@ import TitleTag from "../atoms/TitleTag";
 
 export default function SkillsSection() {
   return (
-    <BrickSection>
+    <BrickSection id="skills-section">
       <TitleTag>Skills</TitleTag>
 
       <div className="flex flex-col md:flex-row justify-center md:space-x-32 mt-8">
@@ -115,15 +115,15 @@ export default function SkillsSection() {
           Languages
         </h3>
         <ul className="mt-4 list-none text-lg">
-          <li className="flex flex-row justify-between space-x-2">
+          <li className="flex flex-col sm:flex-row justify-between sm:space-x-2">
             <span className="font-bold">English</span>
             <span className="w-72">Full professional proficiency</span>
           </li>
-          <li className="flex flex-row justify-between space-x-2">
+          <li className="flex flex-col sm:flex-row justify-between sm:space-x-2">
             <span className="font-bold">Swedish</span>
             <span className="w-72">Professional working proficiency</span>
           </li>
-          <li className="flex flex-row justify-between space-x-2">
+          <li className="flex flex-col sm:flex-row justify-between sm:space-x-2">
             <span className="font-bold">Turkish</span>
             <span className="w-72">Native proficiency</span>
           </li>

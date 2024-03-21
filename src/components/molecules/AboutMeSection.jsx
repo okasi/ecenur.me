@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function AboutMeSection() {
   return (
-    <BrickSection>
+    <BrickSection id="about-me-section">
       <TitleTag>About me</TitleTag>
 
       <div className="flex flex-col md:flex-row items-center mb-8">
