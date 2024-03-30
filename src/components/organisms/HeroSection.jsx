@@ -4,9 +4,9 @@ import Image from "next/image";
 export default function HeroSection() {
   return (
     <BrickSection id="hero-section">
-      <h1 className="mt-4 font-display text-black text-6xl md:text-8xl text-center leading-tight">
+      <h1 className="mt-4 text-center font-display text-6xl leading-tight text-neutral-black md:text-8xl">
         Hi, I’m{" "}
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-0 w-0 inline">
+        <svg xmlns="http://www.w3.org/2000/svg" className="inline size-0">
           <filter id="outlineColored">
             <feMorphology
               in="SourceAlpha"
@@ -36,15 +36,15 @@ export default function HeroSection() {
           Ecenur Uyguner
         </span>
         <br></br>I{" "}
-        <span className="text-white hover:bg-accent-green hover:text-brand-secondary [-webkit-text-stroke:2.75px#624673] hover:[-webkit-text-stroke:0] relative z-10">
+        <span className="relative z-10 text-white [-webkit-text-stroke:2.75px#624673] hover:bg-accent-green hover:text-brand-secondary hover:[-webkit-text-stroke:0]">
           design
         </span>
         ,{" "}
-        <span className="text-white hover:bg-accent-beige hover:text-brand-secondary [-webkit-text-stroke:2.75px#624673] hover:[-webkit-text-stroke:0] relative z-10">
+        <span className="relative z-10 text-white [-webkit-text-stroke:2.75px#624673] hover:bg-accent-beige hover:text-brand-secondary hover:[-webkit-text-stroke:0]">
           act
         </span>{" "}
         &{" "}
-        <span className="text-white hover:bg-accent-dark hover:text-accent-orange [-webkit-text-stroke:2.75px#624673] hover:[-webkit-text-stroke:0] relative z-10">
+        <span className="relative z-10 text-white [-webkit-text-stroke:2.75px#624673] hover:bg-accent-dark hover:text-accent-orange hover:[-webkit-text-stroke:0]">
           craft
         </span>
       </h1>
@@ -54,7 +54,7 @@ export default function HeroSection() {
         alt="Ecenur on a flying carpet inside planet saturn illustration with multiple stars around that has the labels 'problem solver', 'ambitious', 'strategic thinker', 'detail-oriented', 'creative'"
         height={396.06}
         width={552}
-        className="mx-auto py-12 mt-6"
+        className="mx-auto mt-6 py-12"
         quality={98}
         priority
       />
@@ -62,7 +62,7 @@ export default function HeroSection() {
       <a
         href="https://www.linkedin.com/in/ecenursi/"
         target="#blank"
-        className="mt-6 mb-3 flex mx-auto font-sans items-center space-x-2 font-medium justify-center w-fit hover:underline text-sm md:text-lg"
+        className="mx-auto mb-3 mt-6 flex w-fit items-center justify-center space-x-2 font-sans text-sm font-medium hover:underline md:text-lg"
       >
         <svg
           width="30"

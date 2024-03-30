@@ -7,13 +7,13 @@ export default function ExperienceSection() {
     <BrickSection id="experience-section">
       <TitleTag>Experience</TitleTag>
 
-      <div className="flex flex-col-reverse md:flex-row mb-16">
-        <div className="flex flex-col md:w-[55%] mt-8 ml-6 space-y-1.5">
-          <div className="bg-accent-green p-6 rounded-2xl text-xl">
-            <h3 className="-ml-6 px-4 py-2 w-fit -mt-6 font-display text-2xl border-b border-r rounded-l-none rounded-t-none rounded-r-2xl rounded-b-2xl border-neutral-black/50">
+      <div className="mb-16 flex flex-col-reverse md:flex-row">
+        <div className="ml-6 mt-8 flex flex-col space-y-1.5 md:w-[55%]">
+          <div className="rounded-2xl bg-accent-green p-6 text-xl">
+            <h3 className="-ml-6 -mt-6 w-fit rounded-b-2xl rounded-l-none rounded-r-2xl rounded-t-none border-b border-r border-neutral-black/50 px-4 py-2 font-display text-2xl">
               Education
             </h3>
-            <p className="font-bold mt-4">
+            <p className="mt-4 font-bold">
               <span className="font-bold text-brand-secondary">
                 UX-Design and Business Analytics
               </span>{" "}
@@ -38,7 +38,7 @@ export default function ExperienceSection() {
             />
           </svg>
 
-          <div className="bg-accent-beige p-6 rounded-2xl text-xl">
+          <div className="rounded-2xl bg-accent-beige p-6 text-xl">
             <p>
               I am currently studying and learning a lot. <br></br>I will fill
               this space with amazing work experiences!
@@ -49,7 +49,7 @@ export default function ExperienceSection() {
         <a
           href="https://www.linkedin.com/in/ecenursi/"
           target="#blank"
-          className="max-w-[45%] ml-auto mr-4 -mt-16 h-fit"
+          className="-mt-16 ml-auto mr-4 h-fit max-w-[45%]"
         >
           <Image
             src="/ecenur-open-to-internship.png"

@@ -18,26 +18,12 @@ export default function RoadmapNavbar() {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          console.log("entry.target.id", entry.target.id);
-          if (entry.target.id === "testimonials-section") {
-            // Handle visibility for testimonials-section specifically
-            if (entry.isIntersecting && entry.intersectionRatio >= 0.99) {
-              setActiveSection("contact-section");
-            } else if (
-              entry.isIntersecting &&
-              entry.intersectionRatio >= 0.5 &&
-              entry.intersectionRatio < 0.95
-            ) {
-              setActiveSection("testimonials-section");
-            }
-          } else if (entry.isIntersecting) {
-            // For all other sections, set them as active when they intersect
+          if (entry.isIntersecting) {
             setActiveSection(entry.target.id);
           }
         });
       },
-      // Adjust threshold to accommodate the lowest threshold requirement
-      { threshold: [0.5, 0.99] }
+      { threshold: 0.5 },
     );
 
     sections.forEach((sectionId) => {
@@ -62,10 +48,10 @@ export default function RoadmapNavbar() {
   };
 
   return (
-    <div className="hidden lg:flex sticky max-w-3xl mx-auto rounded-full shadow-md bottom-4 left-0 right-0 bg-[linear-gradient(#B6CDD6,#FEFBFB)] p-4 justify-around items-center z-20">
+    <div className="sticky inset-x-0 bottom-4 z-20 mx-auto hidden max-w-3xl items-center justify-around rounded-full bg-[linear-gradient(#B6CDD6,#FEFBFB)] p-4 shadow-md lg:flex">
       <button
         onClick={() => scrollToSection("hero-section")}
-        className={`px-4 py-2 hover:underline rounded-full ${
+        className={`rounded-full px-4 py-2 hover:underline ${
           activeSection === "hero-section"
             ? "bg-accent-green text-white"
             : "bg-transparent"
@@ -75,7 +61,7 @@ export default function RoadmapNavbar() {
       </button>
       <button
         onClick={() => scrollToSection("about-me-section")}
-        className={`px-4 py-2 hover:underline rounded-full ${
+        className={`rounded-full px-4 py-2 hover:underline ${
           activeSection === "about-me-section"
             ? "bg-accent-green text-white"
             : "bg-transparent"
@@ -85,7 +71,7 @@ export default function RoadmapNavbar() {
       </button>
       <button
         onClick={() => scrollToSection("experience-section")}
-        className={`px-4 py-2 hover:underline rounded-full ${
+        className={`rounded-full px-4 py-2 hover:underline ${
           activeSection === "experience-section"
             ? "bg-accent-green text-white"
             : "bg-transparent"
@@ -95,7 +81,7 @@ export default function RoadmapNavbar() {
       </button>
       <button
         onClick={() => scrollToSection("projects-section")}
-        className={`px-4 py-2 hover:underline rounded-full ${
+        className={`rounded-full px-4 py-2 hover:underline ${
           activeSection === "projects-section"
             ? "bg-accent-green text-white"
             : "bg-transparent"
@@ -105,7 +91,7 @@ export default function RoadmapNavbar() {
       </button>
       <button
         onClick={() => scrollToSection("skills-section")}
-        className={`px-4 py-2 hover:underline rounded-full ${
+        className={`rounded-full px-4 py-2 hover:underline ${
           activeSection === "skills-section"
             ? "bg-accent-green text-white"
             : "bg-transparent"
@@ -115,7 +101,7 @@ export default function RoadmapNavbar() {
       </button>
       <button
         onClick={() => scrollToSection("testimonials-section")}
-        className={`px-4 py-2 hover:underline rounded-full ${
+        className={`rounded-full px-4 py-2 hover:underline ${
           activeSection === "testimonials-section"
             ? "bg-accent-green text-white"
             : "bg-transparent"
@@ -125,7 +111,7 @@ export default function RoadmapNavbar() {
       </button>
       <button
         onClick={() => scrollToSection("contact-section")}
-        className={`px-4 py-2 hover:underline rounded-full ${
+        className={`rounded-full px-4 py-2 hover:underline ${
           activeSection === "contact-section"
             ? "bg-accent-green text-white"
             : "bg-transparent"

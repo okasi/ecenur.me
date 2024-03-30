@@ -1,0 +1,13 @@
+{
+  "plugins": [
+    "eslint-plugin-prettier"
+  ],
+  "extends": [
+    "next/core-web-vitals",
+    "eslint-config-prettier",
+    "plugin:tailwindcss/recommended"
+  ],
+  "rules": {
+    "prettier/prettier": "error"
+  }
+}

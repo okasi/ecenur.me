@@ -2,17 +2,16 @@ import BrickSection from "../atoms/BrickSection";
 import TitleTag from "../atoms/TitleTag";
 import Image from "next/image";
 
-
 export default function AboutMeSection() {
   return (
     <BrickSection id="about-me-section">
       <TitleTag>About me</TitleTag>
 
-      <div className="flex flex-col md:flex-row items-center mb-8">
-        <div className="flex flex-col md:w-[55%] mt-8 ml-6 space-y-6">
-          <div className="bg-accent-green p-6 rounded-2xl text-xl">
+      <div className="mb-8 flex flex-col items-center md:flex-row">
+        <div className="ml-6 mt-8 flex flex-col space-y-6 md:w-[55%]">
+          <div className="rounded-2xl bg-accent-green p-6 text-xl">
             <p>
-              I'm a passionate UX student with a love for{" "}
+              I&apos;m a passionate UX student with a love for{" "}
               <span className="font-bold text-brand-secondary">
                 creative thinking
               </span>{" "}
@@ -33,7 +32,7 @@ export default function AboutMeSection() {
               <span className="font-bold text-brand-secondary">
                 user experiences
               </span>{" "}
-              that deeply resonate with individuals. I'm constantly seeking
+              that deeply resonate with individuals. I&apos;m constantly seeking
               opportunities to{" "}
               <span className="font-bold text-brand-secondary">learn</span> and{" "}
               <span className="font-bold text-brand-secondary">grow</span>,{" "}
@@ -43,7 +42,7 @@ export default function AboutMeSection() {
             </p>
           </div>
 
-          <div className="bg-accent-beige p-6 rounded-2xl text-xl">
+          <div className="rounded-2xl bg-accent-beige p-6 text-xl">
             <p>
               Beyond my studies, I have diverse interests that keep me engaged.
               With a background in{" "}
@@ -71,7 +70,7 @@ export default function AboutMeSection() {
           alt="Ecenur on floor"
           height={473.5}
           width={384}
-          className="mx-auto mt-8 object-contain max-w-[45%] px-2"
+          className="mx-auto mt-8 max-w-[45%] object-contain px-2"
           quality={98}
         />
       </div>

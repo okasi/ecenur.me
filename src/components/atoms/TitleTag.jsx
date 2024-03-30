@@ -1,7 +1,7 @@
 export default function TitleTag(props) {
   return (
-    <h2 className="bg-accent-dark w-fit py-2 px-8 mt-8 -ml-4 rounded-r-2xl text-neutral-base font-display text-4xl">
-    {props.children}
-  </h2>
-  )
+    <h2 className="-ml-4 mt-8 w-fit rounded-r-2xl bg-accent-dark px-8 py-2 font-display text-4xl text-neutral-base">
+      {props.children}
+    </h2>
+  );
 }

@@ -2,14 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
-  @apply font-sans antialiased
+  @apply font-sans antialiased bg-accent-dark
 }
 
 @layer utilities {
-
-
   @keyframes hover-in-air {
 
     0%,
@@ -27,7 +24,4 @@ body {
   .animate-hover-in-air {
     animation: hover-in-air 4s infinite;
   }
-
-
-
 }

@@ -6,8 +6,7 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
-    },
+    extend: {},
     fontFamily: {
       display: [
         "var(--font-gochi-hand)",
@@ -34,7 +33,12 @@ module.exports = {
       "light-blue": "#B6CDD6",
       "light-pink": "#FEFBFB",
       "light-green": "#E3E8D7",
-      "light-beige": "#EFE4DD"
+      "light-beige": "#EFE4DD",
+    },
+    borderRadius: {
+      none: "0",
+      "2xl": "1rem",
+      full: "9999px",
     },
   },
   plugins: [],
