@@ -8,7 +8,7 @@ export default function SkillsSection() {
       <TitleTag>Skills</TitleTag>
 
       <div className="mt-8 flex flex-col justify-center md:flex-row md:space-x-32">
-        <div className="flex-col items-center rounded-2xl border border-brand-primary bg-accent-green/10 p-6 md:w-72">
+        <div className="flex-col items-center rounded-2xl border border-brand-primary bg-[#E7ECDB] p-6 md:w-72">
           <h3 className="mx-auto w-fit rounded-2xl bg-accent-green p-6 font-display text-3xl">
             Soft skills
           </h3>
@@ -35,7 +35,7 @@ export default function SkillsSection() {
 
         <hr className="mb-8 mt-16 hidden h-auto w-0 border-0 border-l md:block" />
 
-        <div className="mt-8 flex-col items-center rounded-2xl border border-brand-primary bg-accent-beige/10 p-6 md:mt-0 md:w-72">
+        <div className="mt-8 flex-col items-center rounded-2xl border border-brand-primary bg-[#F2E9E2] p-6 md:mt-0 md:w-72">
           <h3 className="mx-auto w-fit rounded-2xl bg-accent-beige p-6 font-display text-3xl">
             Hard Skills
           </h3>
@@ -61,8 +61,8 @@ export default function SkillsSection() {
         </div>
       </div>
 
-      <div className="mx-auto my-8 flex-col items-center rounded-2xl border border-brand-primary bg-brand-tertiary/10 p-6 md:w-[462px]">
-        <h3 className="mx-auto w-fit rounded-2xl bg-brand-tertiary p-6 font-display text-3xl">
+      <div className="mx-auto my-8 flex-col items-center rounded-2xl border border-brand-primary bg-[#F4F0F7] p-6 md:w-[462px]">
+        <h3 className="mx-auto w-fit rounded-2xl bg-[#E7DFEF] p-6 font-display text-3xl">
           Languages
         </h3>
 

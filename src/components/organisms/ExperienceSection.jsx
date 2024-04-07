@@ -9,8 +9,8 @@ export default function ExperienceSection() {
 
       <div className="mb-16 flex flex-col-reverse md:flex-row">
         <div className="ml-6 mt-8 flex flex-col space-y-1.5 md:w-[55%]">
-          <div className="rounded-2xl bg-accent-green p-6 text-xl">
-            <h3 className="-ml-6 -mt-6 w-fit rounded-b-2xl rounded-l-none rounded-r-2xl rounded-t-none border-b border-r border-neutral-black/50 px-4 py-2 font-display text-2xl">
+          <div className="rounded-2xl border-b-2 border-l-2 border-accent-green-dark bg-accent-green-light p-8 text-xl">
+            <h3 className="-ml-8 -mt-8 w-fit rounded-r-2xl rounded-t-none rounded-tl-2xl bg-accent-green px-4 py-2 font-display text-2xl">
               Education
             </h3>
             <p className="mt-4 font-bold">
@@ -38,7 +38,7 @@ export default function ExperienceSection() {
             />
           </svg>
 
-          <div className="rounded-2xl bg-accent-beige p-6 text-xl">
+          <div className="rounded-2xl border-b-2 border-l-2 border-accent-beige-dark bg-accent-beige-light p-8 text-xl">
             <p>
               I am currently studying and learning a lot. <br></br>I will fill
               this space with amazing work experiences!

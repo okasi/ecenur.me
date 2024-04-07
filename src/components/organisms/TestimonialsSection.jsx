@@ -37,6 +37,7 @@ export default function TestimonialsSection() {
             className="keen-slider flex cursor-grab flex-row !overflow-visible active:cursor-grabbing"
           >
             <TestimonialCard
+              className="bg-light-beige"
               kebabCasePersonName="mikael-k"
               professionTitle="CTO & Full-Stack Developer"
               testimonialBody={
@@ -54,6 +55,7 @@ export default function TestimonialsSection() {
             />
 
             <TestimonialCard
+              className="bg-light-blue"
               kebabCasePersonName="deniz-k"
               professionTitle="Art Teacher"
               testimonialBody={
@@ -69,6 +71,7 @@ export default function TestimonialsSection() {
             />
 
             <TestimonialCard
+              className="bg-light-pink"
               kebabCasePersonName="okan-s"
               professionTitle="Full-Stack Developer"
               testimonialBody={
@@ -85,6 +88,7 @@ export default function TestimonialsSection() {
             />
 
             <TestimonialCard
+              className="bg-light-green"
               kebabCasePersonName="asli-b"
               professionTitle="Nurse"
               testimonialBody={

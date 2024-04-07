@@ -1,10 +1,12 @@
 import BrickSection from "../atoms/BrickSection";
 import Image from "next/image";
+import EcenurTextVector from "../atoms/EcenurTextVector";
+import UygunerTextVector from "../atoms/UygunerTextVector";
 
 export default function HeroSection() {
   return (
     <BrickSection id="hero-section">
-      <h1 className="mt-4 text-center font-display text-6xl leading-tight text-neutral-black md:text-8xl">
+      <h1 className="mt-4 text-center font-display text-6xl !leading-tight text-neutral-black md:text-8xl">
         Hi, I’m{" "}
         <svg xmlns="http://www.w3.org/2000/svg" className="inline size-0">
           <filter id="outlineColored">
@@ -28,12 +30,17 @@ export default function HeroSection() {
           </filter>
         </svg>
         <span
-          className="text-white"
-          style={{
-            filter: "url(#outlineColored)",
-          }}
+          className="relative pr-3.5 text-white md:pr-6"
+          // style={{
+          //   filter: "url(#outlineColored)",
+          // }}
         >
-          Ecenur Uyguner
+          Ecenur
+          <EcenurTextVector className="pointer-events-none absolute inset-0 mt-1.5 h-[68px] md:mt-2 md:h-28" />
+        </span>{" "}
+        <span className="relative pr-3.5 text-white md:pr-6">
+          Uyguner
+          <UygunerTextVector className="pointer-events-none absolute inset-0  mt-1.5 h-[68px] md:mt-2 md:h-28" />
         </span>
         <br></br>I{" "}
         <span className="relative z-10 text-white [-webkit-text-stroke:2.75px#624673] hover:bg-accent-green hover:text-brand-secondary hover:[-webkit-text-stroke:0]">
@@ -47,6 +54,7 @@ export default function HeroSection() {
         <span className="relative z-10 text-white [-webkit-text-stroke:2.75px#624673] hover:bg-accent-dark hover:text-accent-orange hover:[-webkit-text-stroke:0]">
           craft
         </span>
+        .
       </h1>
 
       <Image

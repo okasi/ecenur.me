@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 export default function TestimonialCard({
+  className,
   kebabCasePersonName,
   professionTitle,
   testimonialBody,
@@ -12,8 +13,10 @@ export default function TestimonialCard({
       .join(" ") + ".";
 
   return (
-    // eslint-disable-next-line tailwindcss/no-custom-classname
-    <div className="keen-slider__slide min-w-72 rounded-2xl border bg-light-beige p-6 lg:min-w-[1132.36px]">
+    <div
+      // eslint-disable-next-line tailwindcss/no-custom-classname
+      className={`keen-slider__slide min-w-72 rounded-2xl border p-6 lg:min-w-[1132.36px] ${className}`}
+    >
       <div className="flex flex-col-reverse items-center md:flex-row md:items-stretch">
         <Image
           src={`/testimonials/${kebabCasePersonName}.jpg`}

@@ -9,7 +9,7 @@ export default function AboutMeSection() {
 
       <div className="mb-8 flex flex-col items-center md:flex-row">
         <div className="ml-6 mt-8 flex flex-col space-y-6 md:w-[55%]">
-          <div className="rounded-2xl bg-accent-green p-6 text-xl">
+          <div className="rounded-2xl border-b-2 border-l-2 border-accent-green-dark bg-accent-green-light p-8 text-xl">
             <p>
               I&apos;m a passionate UX student with a love for{" "}
               <span className="font-bold text-brand-secondary">
@@ -42,7 +42,7 @@ export default function AboutMeSection() {
             </p>
           </div>
 
-          <div className="rounded-2xl bg-accent-beige p-6 text-xl">
+          <div className="rounded-2xl border-b-2 border-l-2 border-accent-beige-dark bg-accent-beige-light p-8 text-xl">
             <p>
               Beyond my studies, I have diverse interests that keep me engaged.
               With a background in{" "}
@@ -65,14 +65,16 @@ export default function AboutMeSection() {
           </div>
         </div>
 
-        <Image
-          src="/ecenur-on-floor.png"
-          alt="Ecenur on floor"
-          height={473.5}
-          width={384}
-          className="mx-auto mt-8 max-w-[45%] object-contain px-2"
-          quality={98}
-        />
+        <div className="mx-auto mt-8 max-w-[45%] px-2">
+          <Image
+            src="/ecenur-on-floor.png"
+            alt="Ecenur on floor"
+            height={473.5}
+            width={384}
+            className="w-full rounded-full object-contain shadow-2xl"
+            quality={98}
+          />
+        </div>
       </div>
     </BrickSection>
   );
