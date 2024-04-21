@@ -1,0 +1,18 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": false,
+  "biome.enabled": false,
+  "prettier.enable": false,
+  "eslint.enable": true,
+  "eslint.runtime": "node",
+  "eslint.experimental.useFlatConfig": true,
+  "eslint.format.enable": true,
+  "[javascript][javascriptreact][typescript][typescriptreact][html][css][scss][json]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "editor.formatOnSave": true,
+}
