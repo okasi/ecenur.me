@@ -92,13 +92,14 @@ export default function RoadmapNavbar() {
     <div className="sticky inset-x-0 bottom-4 z-20 mx-auto hidden max-w-3xl justify-around rounded-2xl border border-brand-secondary-dark bg-neutral-grey-light px-4 py-2 shadow lg:flex">
       {sectionNames.map((section, index) => (
         <div
-          className="group relative flex flex-col items-center space-y-1"
+          className="group relative flex cursor-pointer flex-col items-center space-y-1"
           key={section}
+          onClick={() => scrollToSection(`${section}-section`)}
         >
           <div className="relative w-full">
             {index !== sectionNames.length - 1 && (
               <div
-                className={`absolute right-0 top-1/2 h-0.5 w-1/2 -translate-y-1/2${
+                className={`absolute right-0 top-1/2 z-10 h-0.5 w-1/2 -translate-y-1/2 ${
                   index <= activeSectionIndex - 1 ||
                   (pastTestimonials && sectionNames[index + 1] == "contact")
                     ? "bg-brand-secondary-light"
@@ -106,18 +107,18 @@ export default function RoadmapNavbar() {
                       ? "bg-gradient-to-r from-brand-secondary-light to-neutral-grey"
                       : "bg-neutral-grey"
                 } `}
-              ></div>
+              />
             )}
 
             {index !== 0 && (
               <div
-                className={`absolute left-0 top-1/2 h-0.5 w-1/2 -translate-y-1/2${
+                className={`absolute left-0 top-1/2 z-10 h-0.5 w-1/2 -translate-y-1/2 ${
                   index <= activeSectionIndex ||
                   (pastTestimonials && section === "contact")
                     ? "bg-brand-secondary-light"
                     : "bg-neutral-grey"
                 } `}
-              ></div>
+              />
             )}
 
             {/* Dot */}
@@ -131,9 +132,8 @@ export default function RoadmapNavbar() {
               }`}
             />
           </div>
-          <button
-            onClick={() => scrollToSection(`${section}-section`)}
-            className={`mx-4 text-sm font-semibold group-hover:underline lg:text-base ${
+          <span
+            className={`mx-4 select-none text-sm font-semibold group-hover:underline lg:text-base ${
               (!pastTestimonials && activeSection === `${section}-section`) ||
               (pastTestimonials && section === "contact") ||
               index <= activeSectionIndex
@@ -143,7 +143,7 @@ export default function RoadmapNavbar() {
           >
             {section.charAt(0).toUpperCase() +
               section.slice(1).replace(/-/g, " ")}
-          </button>
+          </span>
         </div>
       ))}
     </div>
