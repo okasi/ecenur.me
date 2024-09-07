@@ -1,10 +1,10 @@
 "use client";
-import { useState } from "react";
-import BrickSection from "../atoms/BrickSection";
-import TitleTag from "../atoms/TitleTag";
-import Arrow from "../atoms/Arrow";
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react.es";
+import { useState } from "react";
+import Arrow from "../atoms/Arrow";
+import BrickSection from "../atoms/BrickSection";
+import TitleTag from "../atoms/TitleTag";
 import TestimonialCard from "../molecules/TestimonialCard";
 
 export default function TestimonialsSection() {
@@ -14,7 +14,7 @@ export default function TestimonialsSection() {
     initial: 0,
     slides: {
       origin: "center",
-      perView: 1.1,
+      perView: 1.2,
       spacing: 24,
     },
     slideChanged(slider) {
@@ -30,7 +30,7 @@ export default function TestimonialsSection() {
       <TitleTag>Testimonials</TitleTag>
 
       <>
-        <div className="relative mt-8 overflow-x-hidden">
+        <div className="relative -mx-4 mt-8 overflow-x-hidden">
           <div
             ref={sliderRef}
             // eslint-disable-next-line tailwindcss/no-custom-classname
@@ -45,11 +45,13 @@ export default function TestimonialsSection() {
                   Ecenur works hard and is always focused, which enhances her
                   own work. She is meticulous and has a positive attitude,
                   making her a valuable part of the team.
-                  <br />
-                  <br />
-                  Ecenur jobbar hårt och är alltid fokuserad, vilket lyfter
-                  hennes egna arbete. Hon är noggrann och har en positiv
-                  inställning, vilket gör henne till en värdefull del av teamet.
+                  <span className="hidden md:inline-block">
+                    <br />
+                    Ecenur jobbar hårt och är alltid fokuserad, vilket lyfter
+                    hennes egna arbete. Hon är noggrann och har en positiv
+                    inställning, vilket gör henne till en värdefull del av
+                    teamet.
+                  </span>
                 </>
               }
             />
@@ -71,7 +73,7 @@ export default function TestimonialsSection() {
             />
 
             <TestimonialCard
-              className="bg-light-pink"
+              className="bg-[#E7DFEF]"
               kebabCasePersonName="okan-s"
               professionTitle="Full-Stack Developer"
               testimonialBody={

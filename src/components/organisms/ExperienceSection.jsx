@@ -1,6 +1,6 @@
+import Image from "next/image";
 import BrickSection from "../atoms/BrickSection";
 import TitleTag from "../atoms/TitleTag";
-import Image from "next/image";
 
 export default function ExperienceSection() {
   return (
@@ -49,7 +49,7 @@ export default function ExperienceSection() {
         <a
           href="https://www.linkedin.com/in/ecenursi/"
           target="#blank"
-          className="-mt-16 ml-auto mr-4 h-fit max-w-[45%]"
+          className="-mt-16 ml-auto h-fit max-w-[47.5%] md:mr-4"
         >
           <Image
             src="/ecenur-open-to-internship.png"

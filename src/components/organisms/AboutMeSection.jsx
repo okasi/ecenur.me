@@ -1,13 +1,13 @@
+import Image from "next/image";
 import BrickSection from "../atoms/BrickSection";
 import TitleTag from "../atoms/TitleTag";
-import Image from "next/image";
 
 export default function AboutMeSection() {
   return (
     <BrickSection id="about-me-section">
       <TitleTag>About me</TitleTag>
 
-      <div className="mb-8 flex flex-col items-center md:flex-row">
+      <div className="mb-8 flex flex-col items-center justify-evenly md:flex-row md:space-x-4">
         <div className="ml-6 mt-8 flex flex-col space-y-6 md:w-[55%]">
           <div className="rounded-2xl border-b-2 border-l-2 border-accent-green-dark bg-accent-green-light p-8 text-xl">
             <p>
@@ -42,6 +42,17 @@ export default function AboutMeSection() {
             </p>
           </div>
 
+          <div className="mx-auto mt-8 max-w-[80%] md:hidden">
+            <Image
+              src="/ecenur-on-floor.png"
+              alt="Ecenur on floor"
+              height={473.5}
+              width={384}
+              className="w-full rounded-full object-contain shadow-2xl"
+              quality={98}
+            />
+          </div>
+
           <div className="rounded-2xl border-b-2 border-l-2 border-accent-beige-dark bg-accent-beige-light p-8 text-xl">
             <p>
               Beyond my studies, I have diverse interests that keep me engaged.
@@ -65,7 +76,7 @@ export default function AboutMeSection() {
           </div>
         </div>
 
-        <div className="mx-auto mt-8 max-w-[45%] px-2">
+        <div className="mx-auto mt-8 hidden max-w-[45%] md:block">
           <Image
             src="/ecenur-on-floor.png"
             alt="Ecenur on floor"

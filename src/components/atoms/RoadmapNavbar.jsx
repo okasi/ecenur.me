@@ -7,7 +7,7 @@ export default function RoadmapNavbar() {
 
   useEffect(() => {
     const sections = [
-      "hero-section",
+      "hi!-section",
       "about-me-section",
       "experience-section",
       "projects-section",
@@ -74,7 +74,7 @@ export default function RoadmapNavbar() {
   };
 
   const sectionNames = [
-    "hero",
+    "hi!",
     "about-me",
     "experience",
     "projects",
@@ -133,7 +133,7 @@ export default function RoadmapNavbar() {
             />
           </div>
           <span
-            className={`mx-4 select-none text-sm font-semibold group-hover:underline lg:text-base ${
+            className={`mx-4 select-none text-sm font-semibold capitalize group-hover:underline lg:text-base ${
               (!pastTestimonials && activeSection === `${section}-section`) ||
               (pastTestimonials && section === "contact") ||
               index <= activeSectionIndex

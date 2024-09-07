@@ -5,7 +5,7 @@ import UygunerTextVector from "../atoms/UygunerTextVector";
 
 export default function HeroSection() {
   return (
-    <BrickSection id="hero-section">
+    <BrickSection id="hi!-section">
       <h1 className="mt-4 text-center font-display text-6xl !leading-tight text-neutral-black md:text-8xl">
         Hi, I’m{" "}
         <svg xmlns="http://www.w3.org/2000/svg" className="inline size-0">

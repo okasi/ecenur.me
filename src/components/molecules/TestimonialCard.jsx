@@ -35,7 +35,7 @@ export default function TestimonialCard({
               {professionTitle}
             </h4>
           </div>
-          <p className="p-6 text-lg">{testimonialBody}</p>
+          <p className="py-3 text-lg md:p-6">{testimonialBody}</p>
         </div>
       </div>
     </div>

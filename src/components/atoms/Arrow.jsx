@@ -1,13 +1,13 @@
 export default function Arrow(props) {
   return (
     <div
-      className={`absolute top-1/2 flex size-12 cursor-pointer items-center justify-center rounded-full border bg-white ${
-        props.left ? "left-2" : "left-auto right-2"
+      className={`absolute top-1/2 flex size-10 cursor-pointer items-center justify-center rounded-full border bg-white md:size-12 ${
+        props.left ? "left-4" : "left-auto right-4"
       }`}
     >
       <svg
         onClick={props.onClick}
-        className={`size-7 ${props.disabled ? "opacity-25" : ""} ${
+        className={`size-6 md:size-7 ${props.disabled ? "opacity-25" : ""} ${
           props.left ? "-ml-1" : "-mr-1"
         }`}
         xmlns="http://www.w3.org/2000/svg"
