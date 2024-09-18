@@ -30,12 +30,12 @@ export default function ProjectsSection() {
             />
           </div>
 
-          <div className="w-full rounded-2xl border-2 border-accent-green-dark bg-[#E7ECDB] md:w-1/2">
+          <div className="flex w-full flex-col rounded-2xl border-2 border-accent-green-dark bg-[#E7ECDB] md:w-1/2">
             <h3 className="rounded-t-2xl border-b-2 border-accent-green-dark bg-accent-green-light py-2  text-center text-2xl font-bold">
               Changing Tires Service
             </h3>
 
-            <div className=" px-6">
+            <div className="h-full px-6">
               <p className="mt-4 text-xl">
                 Creating a new brand and service where people can book time
                 slots at their nearest workshop to change their tires. Designing
@@ -59,24 +59,31 @@ export default function ProjectsSection() {
                 </li>
               </ul>
             </div>
+            <a
+              href="https://www.figma.com/design/x3Wwts3iA3dvr3PiiLOnRv"
+              target="_blank"
+              className="bottom-0 mx-6 my-3 self-end rounded-2xl border-2 border-solid bg-neutral-grey/20 p-2.5 text-xl font-medium"
+            >
+              <span className="border-b-2 border-solid">Check in Figma ›</span>
+            </a>
           </div>
         </div>
 
         <hr className="my-12"></hr>
 
-        {/* Second project – Preschool Teachers */}
+        {/* Second project */}
         <div className="flex flex-col items-center justify-between md:flex-row md:items-stretch md:space-x-4">
-          <div className="w-full rounded-2xl border-2 border-accent-beige-dark bg-[#F2E9E2] md:w-1/2">
+          <div className="flex w-full flex-col rounded-2xl border-2 border-accent-beige-dark bg-[#F2E9E2] md:w-1/2">
             <h3 className="rounded-t-2xl border-b-2 border-accent-beige-dark bg-accent-beige-light py-2 text-center text-2xl font-bold">
-              Stress Among Preschool Teachers
+              Moderna Museet
             </h3>
 
-            <div className="px-6">
+            <div className="flex h-full flex-col px-6">
               <p className="mt-4 text-lg">
-                The main topic was &quot;How can we increase people&apos;s
-                well-being?&quot; and we decided to focus our research on
-                &quot;What are the main causes of stress among preschool
-                teachers?&quot;
+                Cupcake ipsum dolor. Sit amet marshmallow topping cheesecake
+                muffin. Halvah croissant candy canes bonbon candy. Apple pie
+                jelly beans topping carrot cake danish tart cake cheesecake.
+                Muffin danish chocolate soufflé pastry bonbon cake.
               </p>
 
               <ul className="my-2 inline-flex flex-row flex-wrap text-base">
@@ -91,12 +98,20 @@ export default function ProjectsSection() {
                 </li>
               </ul>
             </div>
+
+            <a
+              href="https://www.figma.com/design/0DOkIzCLkz22hExxPLIMjZ"
+              target="_blank"
+              className="bottom-0 mx-6 my-3 self-end rounded-2xl border-2 border-solid bg-neutral-grey/20 p-2.5 text-xl font-medium"
+            >
+              <span className="border-b-2 border-solid">Check in Figma ›</span>
+            </a>
           </div>
 
           <div className="relative mt-4 flex aspect-[4/3] w-full flex-col items-center justify-center rounded-2xl border-2 border-accent-beige-dark bg-white p-4 md:mt-0 md:w-1/2">
             <Image
-              src="/preschool.jpg"
-              alt="preschool"
+              src="/moderna-museet.jpg"
+              alt="moderna museet"
               height={320}
               width={320}
               className="rounded-full object-contain"
