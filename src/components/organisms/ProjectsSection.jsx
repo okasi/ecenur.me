@@ -79,11 +79,10 @@ export default function ProjectsSection() {
             </h3>
 
             <div className="flex h-full flex-col px-6">
-              <p className="mt-4 text-lg">
-                Cupcake ipsum dolor. Sit amet marshmallow topping cheesecake
-                muffin. Halvah croissant candy canes bonbon candy. Apple pie
-                jelly beans topping carrot cake danish tart cake cheesecake.
-                Muffin danish chocolate soufflé pastry bonbon cake.
+              <p className="mt-4 text-xl">
+                In this case study, we improved the ticket purchasing experience
+                for Moderna Museet&apos;s website through interface analysis,
+                design changes, and conversion rate optimization.
               </p>
 
               <ul className="my-2 inline-flex flex-row flex-wrap text-base">
