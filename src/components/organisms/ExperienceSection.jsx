@@ -1,5 +1,6 @@
 import Image from "next/image";
 import BrickSection from "../atoms/BrickSection";
+import CVQRCode from "../atoms/CVQRCode";
 import TitleTag from "../atoms/TitleTag";
 
 export default function ExperienceSection() {
@@ -46,20 +47,39 @@ export default function ExperienceSection() {
           </div>
         </div>
 
-        <a
-          href="https://www.linkedin.com/in/ecenursi/"
-          target="#blank"
-          className="-mt-16 ml-auto h-fit max-w-[47.5%] md:mr-4"
-        >
-          <Image
-            src="/ecenur-open-to-internship.png"
-            alt="A sign that says 'Open to internship'"
-            height={247.4325}
-            width={286.875}
-            className="object-contain"
-            quality={98}
-          />
-        </a>
+        <div className="flex w-full flex-col md:w-[47.5%]">
+          <a
+            href="https://www.linkedin.com/in/ecenursi/"
+            target="#blank"
+            className="-mt-16 ml-auto h-fit w-[47.5%] md:mr-4"
+          >
+            <Image
+              src="/ecenur-open-to-internship.png"
+              alt="A sign that says 'Open to internship'"
+              height={247.4325}
+              width={286.875}
+              className="object-contain"
+              quality={98}
+            />
+          </a>
+
+          <div className="mx-auto mt-[22px] w-[47.5%] md:ml-auto md:mr-4">
+            <p className="mt-2 text-center">
+              <a
+                href="https://drive.google.com/file/d/1zpToIPoPFPdWoOxO9WPzQH4cAWnRKI70/view"
+                target="#blank"
+                className="border-b-2 pb-px font-medium"
+              >
+                View my CV here
+              </a>
+              <br />
+              or
+              <br />
+              Scan QR-code 🤓
+            </p>
+            <CVQRCode className="mx-auto mt-0.5 max-h-48" />
+          </div>
+        </div>
       </div>
     </BrickSection>
   );
