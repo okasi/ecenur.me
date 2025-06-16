@@ -20,7 +20,7 @@ export default function ExperienceSection() {
               </span>{" "}
               | Chas Academy | <br></br> Higher Vocational Education (HVE)
             </p>
-            <p className="text-base">August 2023 - Present</p>
+            <p className="text-base">August 2023 - June 2025</p>
           </div>
 
           <svg
@@ -40,11 +40,18 @@ export default function ExperienceSection() {
           </svg>
 
           <div className="rounded-2xl border-b-2 border-l-2 border-accent-beige-dark bg-accent-beige-light p-8 text-xl">
-            <p>
-              I am currently studying and learning a lot. <br></br>I will fill
-              this space with amazing work experiences!
+            <h3 className="-ml-8 -mt-8 w-fit rounded-r-2xl rounded-t-none rounded-tl-2xl bg-accent-beige px-4 py-2 font-display text-2xl">
+              Work
+            </h3>
+            <p className="mt-4 font-bold">
+              <span className="font-bold text-brand-secondary">
+                Internship
+              </span>{" "}
+              | Arcledi OÜ
             </p>
+            <p className="text-base">October 2024 - March 2025</p>
           </div>
+
         </div>
 
         <div className="flex w-full flex-col md:w-[47.5%]">
@@ -54,7 +61,7 @@ export default function ExperienceSection() {
             className="-mt-16 ml-auto h-fit w-[47.5%] md:mr-4"
           >
             <Image
-              src="/ecenur-open-to-internship.png"
+              src="/ecenur-open-to-work.png"
               alt="A sign that says 'Open to internship'"
               height={247.4325}
               width={286.875}
@@ -66,7 +73,7 @@ export default function ExperienceSection() {
           <div className="mx-auto mt-[22px] w-[47.5%] md:ml-auto md:mr-4">
             <p className="mt-2 text-center">
               <a
-                href="https://drive.google.com/file/d/1zpToIPoPFPdWoOxO9WPzQH4cAWnRKI70/view"
+                href="https://drive.google.com/file/d/1RAA9fAF8FmSY-7o_0FfXBGZEKQl9rq0R/view"
                 target="#blank"
                 className="border-b-2 pb-px font-medium"
               >
@@ -77,7 +84,7 @@ export default function ExperienceSection() {
               <br />
               Scan QR-code 🤓
             </p>
-            <CVQRCode className="mx-auto mt-0.5 max-h-48" />
+            <CVQRCode className="mx-auto mt-0.5 max-h-48 object-contain" />
           </div>
         </div>
       </div>
